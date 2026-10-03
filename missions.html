@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Missions 🌙</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #020314, #090b2e, #010208);
+    color: white;
+}
+
+nav {
+    background: rgba(0,0,0,0.85);
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+header {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #c8d4ff;
+    font-size: 18px;
+}
+
+.mission-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 25px;
+    padding: 20px 0 60px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(0,180,255,0.12);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(0,220,255,0.3);
+}
+
+.icon {
+    font-size: 55px;
+    text-align: center;
+}
+
+.card h2 {
+    text-align: center;
+    color: #55e7ff;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #dce3ff;
+}
+
+.highlight {
+    color: #ffd45c;
+    font-weight: bold;
+}
+
+.info {
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto 60px;
+    padding: 30px;
+    background: rgba(0,170,255,0.07);
+    border-radius: 20px;
+    border: 1px solid rgba(0,200,255,0.2);
+}
+
+.info h2 {
+    text-align: center;
+    color: #55e7ff;
+}
+
+.info p {
+    line-height: 1.7;
+    color: #dce3ff;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #01020b;
+    color: #aeb8d8;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="solar-system.html">🌌 Solar System</a>
+    <a href="planets.html">🪐 Planets</a>
+    <a href="rockets.html">🚀 Rockets</a>
+    <a href="astronauts.html">👨‍🚀 Astronauts</a>
+    <a href="missions.html">🌙 Missions</a>
+</nav>
+
+<header>
+    <h1>🌙 Indian Space Missions</h1>
+    <p>Explore India's journey from Earth to the Moon, Mars and beyond.</p>
+</header>
+
+<div class="mission-container">
+
+    <div class="card">
+        <div class="icon">🌙</div>
+        <h2>Chandrayaan-1</h2>
+
+        <p>
+            <span class="highlight">Launch:</span> 2008
+        </p>
+
+        <p>
+            Chandrayaan-1 was India's first mission to the Moon.
+            It helped scientists study the lunar surface and provided
+            important evidence related to water molecules on the Moon.
+        </p>
+
+        <p>
+            It was launched using India's PSLV rocket.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <div class="icon">🌙</div>
+        <h2>Chandrayaan-2</h2>
+
+        <p>
+            <span class="highlight">Launch:</span> 2019
+        </p>
+
+        <p>
+            Chandrayaan-2 consisted of an orbiter, lander and rover.
+            The lander attempted a soft landing near the lunar south pole.
+        </p>
+
+        <p>
+            The orbiter continued studying the Moon from orbit.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <div class="icon">🌕</div>
+        <h2>Chandrayaan-3</h2>
+
+        <p>
+            <span class="highlight">Launch:</span> 2023
+        </p>
+
+        <p>
+            Chandrayaan-3 successfully achieved a soft landing on the
+            Moon on <span class="highlight">23 August 2023</span>.
+        </p>
+
+        <p>
+            India became the <span class="highlight">fourth country</span>
+            to successfully soft-land on the Moon.
+        </p>
+
+        <p>
+            The mission included the Vikram lander and Pragyan rover.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <div class="icon">🔴</div>
+        <h2>Mangalyaan</h2>
+
+        <p>
+            <span class="highlight">Launch:</span> 2013
+        </p>
+
+        <p>
+            Mangalyaan, also known as the Mars Orbiter Mission,
+            was India's first interplanetary mission.
+        </p>
+
+        <p>
+            It successfully entered orbit around Mars in 2014.
+        </p>
+
+        <p>
+            The mission studied the Martian surface and atmosphere.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <div class="icon">☀️</div>
+        <h2>Aditya-L1</h2>
+
+        <p>
+            <span class="highlight">Launch:</span> 2023
+        </p>
+
+        <p>
+            Aditya-L1 is India's first space-based solar observatory.
+        </p>
+
+        <p>
+            It studies the Sun, including the solar atmosphere and
+            solar activity.
+        </p>
+
+        <p>
+            The spacecraft operates around the Sun-Earth L1 point.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <div class="icon">👨‍🚀</div>
+        <h2>Gaganyaan</h2>
+
+        <p>
+            <span class="highlight">Mission:</span> Human Spaceflight
+        </p>
+
+        <p>
+            Gaganyaan is India's human spaceflight programme.
+            Its objective is to send Indian astronauts to
+            low Earth orbit and safely return them to Earth.
+        </p>
+
+        <p>
+            India is developing the crew module, service module,
+            launch vehicle and other systems required for the mission.
+        </p>
+    </div>
+
+</div>
+
+
+<section class="info">
+
+    <h2>🚀 Why Are Space Missions Important?</h2>
+
+    <p>
+        Space missions help scientists understand planets, stars,
+        the Sun and our own Earth.
+    </p>
+
+    <p>
+        They also help develop technologies used in communication,
+        navigation, weather forecasting, Earth observation and
+        scientific research.
+    </p>
+
+    <p>
+        India's missions have helped build experience in launching
+        satellites, exploring other worlds and developing
+        human-spaceflight technology.
+    </p>
+
+</section>
+
+
+<footer>
+    🌌 Space Explorer | India's Journey Beyond Earth 🚀🇮🇳
+</footer>
+
+</body>
+</html>

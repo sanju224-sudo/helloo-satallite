@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Facts 🔭</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #020314, #090b2e, #010208);
+    color: white;
+}
+
+nav {
+    background: rgba(0,0,0,0.88);
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 9px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+header {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #c8d4ff;
+    font-size: 18px;
+}
+
+.facts-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+    padding: 20px 0 60px;
+}
+
+.fact {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(0,180,255,0.12);
+}
+
+.fact:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 30px rgba(0,220,255,0.3);
+}
+
+.icon {
+    font-size: 55px;
+}
+
+.fact h2 {
+    color: #55e7ff;
+}
+
+.fact p {
+    color: #dce3ff;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #ffd45c;
+    font-weight: bold;
+}
+
+.quiz {
+    width: 90%;
+    max-width: 850px;
+    margin: 10px auto 60px;
+    padding: 30px;
+    background: rgba(0,170,255,0.07);
+    border: 1px solid rgba(0,200,255,0.2);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.quiz h2 {
+    color: #55e7ff;
+}
+
+.quiz button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #00bfff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz button:hover {
+    background: #008dcc;
+}
+
+#answer {
+    margin-top: 20px;
+    color: #ffd45c;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #01020b;
+    color: #aeb8d8;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="solar-system.html">🌌 Solar System</a>
+    <a href="planets.html">🪐 Planets</a>
+    <a href="rockets.html">🚀 Rockets</a>
+    <a href="astronauts.html">👨‍🚀 Astronauts</a>
+    <a href="missions.html">🌙 Missions</a>
+    <a href="satellites.html">🛰️ Satellites</a>
+    <a href="facts.html">🔭 Facts</a>
+</nav>
+
+<header>
+    <h1>🔭 Amazing Space Facts</h1>
+    <p>Some fascinating facts about our universe.</p>
+</header>
+
+<div class="facts-container">
+
+    <div class="fact">
+        <div class="icon">☀️</div>
+        <h2>The Sun is Huge</h2>
+        <p>
+            The Sun contains about <span class="highlight">99.8%</span>
+            of the total mass of our Solar System.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">🌍</div>
+        <h2>Earth is Moving</h2>
+        <p>
+            Earth rotates on its axis and also travels around the Sun.
+            We are constantly moving through space.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">🌙</div>
+        <h2>The Moon Has No Light of Its Own</h2>
+        <p>
+            The Moon appears bright because it
+            <span class="highlight">reflects sunlight</span>.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">🔴</div>
+        <h2>Mars is Red</h2>
+        <p>
+            Mars looks reddish because iron minerals in its surface
+            have reacted with oxygen, creating iron oxides.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">🪐</div>
+        <h2>Saturn Has Rings</h2>
+        <p>
+            Saturn's rings are mainly made of
+            <span class="highlight">ice and rocky particles</span>.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">🌌</div>
+        <h2>Space is Enormous</h2>
+        <p>
+            The observable universe contains an enormous number of
+            galaxies, each containing huge numbers of stars.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">💫</div>
+        <h2>Stars Have Different Sizes</h2>
+        <p>
+            Stars can range from relatively small stars to
+            extremely large supergiants.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">🕳️</div>
+        <h2>Black Holes</h2>
+        <p>
+            A black hole has gravity so strong that
+            <span class="highlight">light cannot escape</span>
+            from within its event horizon.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">🚀</div>
+        <h2>Space is Mostly Empty</h2>
+        <p>
+            The space between stars and planets contains extremely
+            little matter compared with the air around us on Earth.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">🌠</div>
+        <h2>Shooting Stars</h2>
+        <p>
+            A "shooting star" is not actually a star.
+            It is usually a small space rock burning up in Earth's atmosphere.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">⏱️</div>
+        <h2>Light Travels Fast</h2>
+        <p>
+            Light travels at about
+            <span class="highlight">300,000 km per second</span>
+            in vacuum.
+        </p>
+    </div>
+
+    <div class="fact">
+        <div class="icon">👨‍🚀</div>
+        <h2>Humans Have Walked on the Moon</h2>
+        <p>
+            Humans first walked on the Moon during
+            <span class="highlight">Apollo 11</span> in 1969.
+        </p>
+    </div>
+
+</div>
+
+<section class="quiz">
+
+    <h2>🧠 Quick Space Quiz</h2>
+
+    <p>Which planet is known as the Red Planet?</p>
+
+    <button onclick="showAnswer()">Show Answer 🚀</button>
+
+    <div id="answer"></div>
+
+</section>
+
+<script>
+function showAnswer() {
+    document.getElementById("answer").innerHTML =
+        "🔴 Answer: Mars!";
+}
+</script>
+
+<footer>
+    🌌 Space Explorer | Keep Looking Up! 🔭✨
+</footer>
+
+</body>
+</html>

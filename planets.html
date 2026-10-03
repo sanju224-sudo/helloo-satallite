@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Planets - Space Explorer</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: white;
+}
+
+/* NAVBAR */
+
+nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    color: #5ee7ff;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #5ee7ff;
+}
+
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    color: #5ee7ff;
+    font-size: 42px;
+}
+
+.header p {
+    margin-top: 12px;
+    color: #94a3b8;
+}
+
+
+/* PLANET CARDS */
+
+.container {
+    padding: 20px 7% 70px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+.card {
+    background: #0b1120;
+    border: 1px solid #1e293b;
+    border-radius: 18px;
+    padding: 28px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #5ee7ff;
+    box-shadow:
+        0 0 25px rgba(94,231,255,0.15);
+}
+
+.planet-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: #5ee7ff;
+    margin-bottom: 18px;
+}
+
+.card p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 9px;
+}
+
+.label {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #1e293b;
+    color: #64748b;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        🚀 Space Explorer
+    </div>
+
+    <div>
+
+        <a href="index.html">🏠 Home</a>
+
+        <a href="solar-system.html">
+            🌌 Solar System
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- HEADER -->
+
+<section class="header">
+
+    <h1>🪐 Explore the Planets</h1>
+
+    <p>
+        Discover how the planets were known or discovered,
+        what they are made of and what makes each world unique.
+    </p>
+
+</section>
+
+
+<!-- PLANETS -->
+
+<section class="container">
+
+<div class="cards">
+
+
+<!-- MERCURY -->
+
+<div class="card">
+
+    <div class="planet-icon">☿️</div>
+
+    <h2>Mercury</h2>
+
+    <p>
+        <span class="label">Known since:</span>
+        Ancient times
+    </p>
+
+    <p>
+        <span class="label">Discovered by:</span>
+        No single discoverer. Mercury is visible
+        to the naked eye and was known to ancient
+        civilizations.
+    </p>
+
+    <p>
+        <span class="label">What is there?</span>
+        A rocky surface covered with craters,
+        mountains and large impact basins.
+    </p>
+
+    <p>
+        <span class="label">Atmosphere:</span>
+        Mercury has an extremely thin exosphere.
+    </p>
+
+    <p>
+        <span class="label">Moons:</span>
+        0
+    </p>
+
+    <p>
+        <span class="label">Special fact:</span>
+        It is the closest planet to the Sun.
+    </p>
+
+</div>
+
+
+<!-- VENUS -->
+
+<div class="card">
+
+    <div class="planet-icon">♀️</div>
+
+    <h2>Venus</h2>
+
+    <p>
+        <span class="label">Known since:</span>
+        Ancient times
+    </p>
+
+    <p>
+        <span class="label">Discovered by:</span>
+        No single discoverer. Venus is easily
+        visible from Earth.
+    </p>
+
+    <p>
+        <span class="label">What is there?</span>
+        Rocky plains, mountains and many volcanoes.
+    </p>
+
+    <p>
+        <span class="label">Atmosphere:</span>
+        Mostly carbon dioxide with thick clouds
+        containing sulfuric acid.
+    </p>
+
+    <p>
+        <span class="label">Moons:</span>
+        0
+    </p>
+
+    <p>
+        <span class="label">Special fact:</span>
+        Venus is the hottest planet in the Solar System.
+    </p>
+
+</div>
+
+
+<!-- EARTH -->
+
+<div class="card">
+
+    <div class="planet-icon">🌍</div>
+
+    <h2>Earth</h2>
+
+    <p>
+        <span class="label">Known since:</span>
+        Prehistoric times
+    </p>
+
+    <p>
+        <span class="label">Discovery:</span>
+        Earth was not discovered as a new planet.
+        Humans have always lived on it.
+    </p>
+
+    <p>
+        <span class="label">What is there?</span>
+        Oceans, continents, mountains, forests,
+        atmosphere and a huge variety of life.
+    </p>
+
+    <p>
+        <span class="label">Atmosphere:</span>
+        Mainly nitrogen and oxygen.
+    </p>
+
+    <p>
+        <span class="label">Moon:</span>
+        1
+    </p>
+
+    <p>
+        <span class="label">Special fact:</span>
+        Earth is currently the only world known
+        to support life.
+    </p>
+
+</div>
+
+
+<!-- MARS -->
+
+<div class="card">
+
+    <div class="planet-icon">🔴</div>
+
+    <h2>Mars</h2>
+
+    <p>
+        <span class="label">Known since:</span>
+        Ancient times
+    </p>
+
+    <p>
+        <span class="label">Discovered by:</span>
+        No single discoverer. Mars was observed
+        by ancient civilizations.
+    </p>
+
+    <p>
+        <span class="label">What is there?</span>
+        Rocky terrain, volcanoes, valleys,
+        polar ice caps and dust.
+    </p>
+
+    <p>
+        <span class="label">Atmosphere:</span>
+        Very thin, mostly carbon dioxide.
+    </p>
+
+    <p>
+        <span class="label">Moons:</span>
+        2 — Phobos and Deimos
+    </p>
+
+    <p>
+        <span class="label">Special fact:</span>
+        Mars has Olympus Mons, the largest known
+        volcano in the Solar System.
+    </p>
+
+</div>
+
+
+<!-- JUPITER -->
+
+<div class="card">
+
+    <div class="planet-icon">🟠</div>
+
+    <h2>Jupiter</h2>
+
+    <p>
+        <span class="label">Known since:</span>
+        Ancient times
+    </p>
+
+    <p>
+        <span class="label">Discovered by:</span>
+        No single discoverer.
+    </p>
+
+    <p>
+        <span class="label">What is there?</span>
+        A huge atmosphere of hydrogen and helium,
+        powerful storms and many cloud bands.
+    </p>
+
+    <p>
+        <span class="label">Atmosphere:</span>
+        Mostly hydrogen and helium.
+    </p>
+
+    <p>
+        <span class="label">Moons:</span>
+        Many known moons, including Io, Europa,
+        Ganymede and Callisto.
+    </p>
+
+    <p>
+        <span class="label">Special fact:</span>
+        Jupiter is the largest planet.
+    </p>
+
+</div>
+
+
+<!-- SATURN -->
+
+<div class="card">
+
+    <div class="planet-icon">🪐</div>
+
+    <h2>Saturn</h2>
+
+    <p>
+        <span class="label">Known since:</span>
+        Ancient times
+    </p>
+
+    <p>
+        <span class="label">Discovered by:</span>
+        No single discoverer.
+    </p>
+
+    <p>
+        <span class="label">What is there?</span>
+        A gas giant surrounded by an extensive
+        system of icy and rocky rings.
+    </p>
+
+    <p>
+        <span class="label">Atmosphere:</span>
+        Mostly hydrogen and helium.
+    </p>
+
+    <p>
+        <span class="label">Moons:</span>
+        Many known moons, including Titan and Enceladus.
+    </p>
+
+    <p>
+        <span class="label">Special fact:</span>
+        Saturn has the most prominent ring system
+        in the Solar System.
+    </p>
+
+</div>
+
+
+<!-- URANUS -->
+
+<div class="card">
+
+    <div class="planet-icon">🔵</div>
+
+    <h2>Uranus</h2>
+
+    <p>
+        <span class="label">Discovered:</span>
+        1781
+    </p>
+
+    <p>
+        <span class="label">Discoverer:</span>
+        William Herschel
+    </p>
+
+    <p>
+        <span class="label">What is there?</span>
+        An ice giant with a cold atmosphere
+        and faint rings.
+    </p>
+
+    <p>
+        <span class="label">Atmosphere:</span>
+        Mainly hydrogen and helium with methane.
+    </p>
+
+    <p>
+        <span class="label">Moons:</span>
+        28 known moons
+    </p>
+
+    <p>
+        <span class="label">Special fact:</span>
+        Uranus rotates on its side because of
+        its extreme axial tilt.
+    </p>
+
+</div>
+
+
+<!-- NEPTUNE -->
+
+<div class="card">
+
+    <div class="planet-icon">🔵</div>
+
+    <h2>Neptune</h2>
+
+    <p>
+        <span class="label">Discovered:</span>
+        1846
+    </p>
+
+    <p>
+        <span class="label">Discovery:</span>
+        Neptune was predicted mathematically
+        and then observed by astronomers.
+    </p>
+
+    <p>
+        <span class="label">What is there?</span>
+        A deep blue ice giant with powerful
+        storms and extremely fast winds.
+    </p>
+
+    <p>
+        <span class="label">Atmosphere:</span>
+        Mainly hydrogen, helium and methane.
+    </p>
+
+    <p>
+        <span class="label">Moons:</span>
+        16 known moons, including Triton.
+    </p>
+
+    <p>
+        <span class="label">Special fact:</span>
+        Neptune is the farthest recognized planet
+        from the Sun.
+    </p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<footer>
+
+🚀 Space Explorer | Planet Information
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Space Explorer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #020617;
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            background: rgba(2, 6, 23, 0.95);
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #5ee7ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #5ee7ff;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                radial-gradient(circle at 20% 30%, #ffffff 1px, transparent 2px),
+                radial-gradient(circle at 70% 20%, #ffffff 1px, transparent 2px),
+                radial-gradient(circle at 40% 80%, #ffffff 1px, transparent 2px),
+                radial-gradient(circle at 90% 70%, #ffffff 1px, transparent 2px);
+
+            background-size: 180px 180px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #5ee7ff;
+            text-shadow: 0 0 25px rgba(94, 231, 255, 0.5);
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin-top: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin-top: 15px;
+            color: #aab4c3;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .explore-btn {
+            margin-top: 30px;
+            padding: 14px 30px;
+            border-radius: 30px;
+            border: 1px solid #5ee7ff;
+            background: transparent;
+            color: #5ee7ff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .explore-btn:hover {
+            background: #5ee7ff;
+            color: #020617;
+            box-shadow: 0 0 25px rgba(94, 231, 255, 0.5);
+        }
+
+        /* OPTIONS */
+
+        .explore {
+            padding: 60px 7%;
+        }
+
+        .explore h2 {
+            text-align: center;
+            font-size: 34px;
+            color: #5ee7ff;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #0b1120;
+            border: 1px solid #1e293b;
+            border-radius: 18px;
+            padding: 30px 22px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #5ee7ff;
+            box-shadow: 0 0 25px rgba(94, 231, 255, 0.15);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 18px;
+        }
+
+        .card h3 {
+            color: #5ee7ff;
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #9ca8ba;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            nav {
+                padding: 0 20px;
+            }
+
+            nav .links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            🚀 Space Explorer
+        </div>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="#explore">Explore</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <h1>🌌 SPACE EXPLORER</h1>
+
+        <h2>Discover the Universe</h2>
+
+        <p>
+            Explore our Solar System, planets, Indian rockets,
+            astronauts, space missions, satellites and amazing
+            facts about the universe.
+        </p>
+
+        <button class="explore-btn"
+                onclick="document.getElementById('explore').scrollIntoView({behavior:'smooth'})">
+
+            🚀 Start Exploring
+
+        </button>
+
+    </section>
+
+
+    <!-- EXPLORE OPTIONS -->
+
+    <section class="explore" id="explore">
+
+        <h2>Explore Space</h2>
+
+        <div class="cards">
+
+
+            <!-- SOLAR SYSTEM -->
+
+            <a href="solar-system.html" class="card">
+
+                <div class="icon">🌌</div>
+
+                <h3>Solar System</h3>
+
+                <p>
+                    Explore the Sun and the eight planets
+                    moving through their orbits.
+                </p>
+
+            </a>
+
+
+            <!-- PLANETS -->
+
+            <a href="planets.html" class="card">
+
+                <div class="icon">🪐</div>
+
+                <h3>Planets</h3>
+
+                <p>
+                    Learn interesting facts and information
+                    about every planet.
+                </p>
+
+            </a>
+
+
+            <!-- ROCKETS -->
+
+            <a href="rockets.html" class="card">
+
+                <div class="icon">🚀</div>
+
+                <h3>Indian Rockets</h3>
+
+                <p>
+                    Discover rockets developed and launched
+                    by India.
+                </p>
+
+            </a>
+
+
+            <!-- ASTRONAUTS -->
+
+            <a href="astronauts.html" class="card">
+
+                <div class="icon">👨‍🚀</div>
+
+                <h3>Indian Astronauts</h3>
+
+                <p>
+                    Learn about Indians who have travelled
+                    to space.
+                </p>
+
+            </a>
+
+
+            <!-- MISSIONS -->
+
+            <a href="missions.html" class="card">
+
+                <div class="icon">🌙</div>
+
+                <h3>Space Missions</h3>
+
+                <p>
+                    Explore important Indian missions
+                    such as Chandrayaan and Mangalyaan.
+                </p>
+
+            </a>
+
+
+            <!-- SATELLITES -->
+
+            <a href="satellites.html" class="card">
+
+                <div class="icon">🛰️</div>
+
+                <h3>Satellites</h3>
+
+                <p>
+                    Understand how satellites work and
+                    how they help us on Earth.
+                </p>
+
+            </a>
+
+
+            <!-- SPACE FACTS -->
+
+            <a href="facts.html" class="card">
+
+                <div class="icon">🔭</div>
+
+                <h3>Space Facts</h3>
+
+                <p>
+                    Discover fascinating facts about
+                    space, stars and planets.
+                </p>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        🚀 Space Explorer | Learn • Explore • Discover
+
+    </footer>
+
+</body>
+</html>
